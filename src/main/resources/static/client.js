@@ -12936,7 +12936,7 @@ function mergeHook$1 (f1, f2) {
   return merged
 }
 
-// transform component v-model info (value and callback) into
+// transform component v-model com (value and callback) into
 // prop and event handler respectively.
 function transformModel (options, data) {
   var prop = (options.model && options.model.prop) || 'value';

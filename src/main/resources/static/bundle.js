@@ -24056,7 +24056,7 @@ function readableAddChunk(stream, state, chunk, encoding, addToFront) {
           stream.emit('data', chunk);
           stream.read(0);
         } else {
-          // update the buffer info.
+          // update the buffer com.
           state.length += state.objectMode ? 1 : chunk.length;
           if (addToFront) state.buffer.unshift(chunk);else state.buffer.push(chunk);
 

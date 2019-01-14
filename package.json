@@ -1,5 +1,5 @@
 {
-  "name": "spring-vue-example",
+  "name": "spring-vue-ssr",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kitak/spring-vue-example.git"
+    "url": "git+ssh://git@github.com/terwer/spring-vue-ssr.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kitak/spring-vue-example/issues"
+    "url": "https://github.com/terwer/spring-vue-ssr/issues"
   },
-  "homepage": "https://github.com/kitak/spring-vue-example#readme",
+  "homepage": "https://github.com/terwer/spring-vue-ssr#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "vue": "^2.5.22",

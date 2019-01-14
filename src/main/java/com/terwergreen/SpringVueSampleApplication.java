@@ -1,4 +1,4 @@
-package info.kitak.vue;
+package com.terwergreen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

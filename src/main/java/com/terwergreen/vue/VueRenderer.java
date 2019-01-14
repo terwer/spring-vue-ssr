@@ -1,4 +1,4 @@
-package info.kitak.vue;
+package com.terwergreen.vue;
 
 import jdk.nashorn.api.scripting.NashornScriptEngine;
 

@@ -12720,7 +12720,7 @@ function addChunk(stream, state, chunk, addToFront) {
     stream.emit('data', chunk);
     stream.read(0);
   } else {
-    // update the buffer info.
+    // update the buffer com.
     state.length += state.objectMode ? 1 : chunk.length;
     if (addToFront) state.buffer.unshift(chunk);else state.buffer.push(chunk);
 
@@ -24652,7 +24652,7 @@ function genFor (
     state.warn(
       "<" + (el.tag) + " v-for=\"" + alias + " in " + exp + "\">: component lists rendered with " +
       "v-for should have explicit keys. " +
-      "See https://vuejs.org/guide/list.html#key for more info.",
+      "See https://vuejs.org/guide/list.html#key for more com.",
       true /* tip */
     );
   }
@@ -27338,7 +27338,7 @@ function mergeHook$1 (f1, f2) {
   return merged
 }
 
-// transform component v-model info (value and callback) into
+// transform component v-model com (value and callback) into
 // prop and event handler respectively.
 function transformModel (options, data) {
   var prop = (options.model && options.model.prop) || 'value';
@@ -33182,7 +33182,7 @@ function mergeHook$1 (f1, f2) {
   return merged
 }
 
-// transform component v-model info (value and callback) into
+// transform component v-model com (value and callback) into
 // prop and event handler respectively.
 function transformModel (options, data) {
   var prop = (options.model && options.model.prop) || 'value';
