@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringVueSampleApplication {
+public class SpringVueSsrApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringVueSampleApplication.class, args);
+        SpringApplication.run(SpringVueSsrApplication.class, args);
     }
 }
