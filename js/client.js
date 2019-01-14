@@ -1,10 +1,15 @@
 import 'babel-polyfill';
-import {CommentBox} from './components';
 
-global.renderClient = (comments) => {
-  var data = comments || [];
+import Vue from 'vue'
+import App from './App.vue'
 
-  const vm = new CommentBox();
-  vm.comments = data;
-  vm.$mount('#content');
+// 生产部署时候需要设置为false
+Vue.config.productionTip = true
+
+global.renderClient = () => {
+    const vm = new Vue({
+        render: h => h(App),
+    })
+    vm.$mount('#app')
 };
+

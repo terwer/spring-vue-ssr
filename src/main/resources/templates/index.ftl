@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div id="content">${content}</div>
-    <script src="client.js"></script>
+    <div id="main">${content}</div>
+    <script src="client.js?rnd=${rnd}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            renderClient(${data});
+            renderClient();
         });
     </script>
 </body>

@@ -2,11 +2,15 @@ package info.kitak.vue;
 
 import jdk.nashorn.api.scripting.NashornScriptEngine;
 
-import javax.script.*;
+import javax.script.Bindings;
+import javax.script.CompiledScript;
+import javax.script.ScriptContext;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+import javax.script.SimpleScriptContext;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.List;
 
 public class VueRenderer {
     private Object renderServerFunction;
@@ -21,7 +25,7 @@ public class VueRenderer {
         }
     }
 
-    public String renderCommentBox(List<Comment> comments) {
+    public String renderContent() {
         NashornScriptEngine engine = (NashornScriptEngine) new ScriptEngineManager().getEngineByName("nashorn");
         try {
             ScriptContext newContext = new SimpleScriptContext();
@@ -29,13 +33,11 @@ public class VueRenderer {
             Bindings engineScope = newContext.getBindings(ScriptContext.ENGINE_SCOPE);
             engineScope.put("renderServer", this.renderServerFunction);
             engine.setContext(newContext);
-            Object html = engine.invokeFunction("renderServer", comments);
+            Object html = engine.invokeFunction("renderServer");
             return String.valueOf(html);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new IllegalStateException("failed to render vue component", e);
         }
-
     }
 
     private Reader read(String path) {
