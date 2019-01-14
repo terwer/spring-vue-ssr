@@ -1,9 +1,9 @@
-Spring Boot Vue Example
+Spring Boot Vue Ssr
 ======================================
 
-A Vue.js version of this example ( https://github.com/winterbe/spring-react-example ).
+A Vue.js Server side rendering with Spring Boot using Java 8 Nashorn Script Engine.
 
-The `CommentBox` main view is isomorphic: HTML is initially rendered on the server with Nashorn by utilizing `renderToString`. All interactive DOM manipulations are handled by Vue.js directly in the browser.
+Main view is isomorphic: HTML is initially rendered on the server with Nashorn by utilizing `renderToString`. All interactive DOM manipulations are handled by Vue.js directly in the browser.
 
 ### How to launch
 
