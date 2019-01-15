@@ -13,16 +13,16 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"commentBox",attrs:{"id":"app"}},[_c('h1',[_vm._v("Comments2")])])}]
-__vue__options__._scopeId = "data-v-5f91c8e5"
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('h1',[_vm._v("Content")])])}]
+__vue__options__._scopeId = "data-v-01d911bd"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5f91c8e5", __vue__options__)
+    hotAPI.createRecord("data-v-01d911bd", __vue__options__)
   } else {
-    hotAPI.reload("data-v-5f91c8e5", __vue__options__)
+    hotAPI.reload("data-v-01d911bd", __vue__options__)
   }
 })()}
 },{"vue":396,"vue-hot-reload-api":392}],2:[function(require,module,exports){
@@ -12720,7 +12720,7 @@ function addChunk(stream, state, chunk, addToFront) {
     stream.emit('data', chunk);
     stream.read(0);
   } else {
-    // update the buffer com.
+    // update the buffer info.
     state.length += state.objectMode ? 1 : chunk.length;
     if (addToFront) state.buffer.unshift(chunk);else state.buffer.push(chunk);
 
@@ -24652,7 +24652,7 @@ function genFor (
     state.warn(
       "<" + (el.tag) + " v-for=\"" + alias + " in " + exp + "\">: component lists rendered with " +
       "v-for should have explicit keys. " +
-      "See https://vuejs.org/guide/list.html#key for more com.",
+      "See https://vuejs.org/guide/list.html#key for more info.",
       true /* tip */
     );
   }
@@ -27338,7 +27338,7 @@ function mergeHook$1 (f1, f2) {
   return merged
 }
 
-// transform component v-model com (value and callback) into
+// transform component v-model info (value and callback) into
 // prop and event handler respectively.
 function transformModel (options, data) {
   var prop = (options.model && options.model.prop) || 'value';
@@ -33182,7 +33182,7 @@ function mergeHook$1 (f1, f2) {
   return merged
 }
 
-// transform component v-model com (value and callback) into
+// transform component v-model info (value and callback) into
 // prop and event handler respectively.
 function transformModel (options, data) {
   var prop = (options.model && options.model.prop) || 'value';

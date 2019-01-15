@@ -1,6 +1,6 @@
 <template>
-    <div id="app" class="commentBox">
-        <h1>Comments2</h1>
+    <div id="app">
+        <h1>Content</h1>
     </div>
 </template>
 
@@ -11,5 +11,4 @@
 </script>
 
 <style scoped>
-
 </style>
